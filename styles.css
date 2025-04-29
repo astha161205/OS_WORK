@@ -1,0 +1,123 @@
+/* Base styles */
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #f3f4f6;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+}
+
+/* Dark mode */
+.dark {
+    --primary-bg: #1a1a1a;
+    --secondary-bg: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --border-color: #404040;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th {
+    background-color: var(--secondary-bg);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Chart container */
+.chart-container {
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Search input */
+.search-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+/* Alert styles */
+.alert {
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert-high {
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    color: #991b1b;
+}
+
+.alert-medium {
+    background-color: #fef3c7;
+    border: 1px solid #f59e0b;
+    color: #92400e;
+}
+
+.alert-low {
+    background-color: #dbeafe;
+    border: 1px solid #3b82f6;
+    color: #1e40af;
+}
+
+/* Dark mode alert styles */
+.dark .alert-high {
+    background-color: #7f1d1d;
+    border-color: #ef4444;
+    color: #fecaca;
+}
+
+.dark .alert-medium {
+    background-color: #78350f;
+    border-color: #f59e0b;
+    color: #fef3c7;
+}
+
+.dark .alert-low {
+    background-color: #1e3a8a;
+    border-color: #3b82f6;
+    color: #dbeafe;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+} 
