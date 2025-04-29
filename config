@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/astha161205/OS.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "upstream"]
+	url = https://github.com/Skrock310/OS.git
+	fetch = +refs/heads/*:refs/remotes/upstream/*
+[remote "os"]
+	url = https://github.com/Skrock310/os_
+	fetch = +refs/heads/*:refs/remotes/os/*
+[lfs]
+	repositoryformatversion = 0
+[branch "main"]
+	vscode-merge-base = origin/main
